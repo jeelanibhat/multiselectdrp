@@ -1,0 +1,14 @@
+<h2 class="m-5">Colors</h2>
+
+<div class="container m-5" [ngClass]="{'border-class': AddBorder}">
+	<div *ngFor="let user of users; let in = index" class="d-flex flex-column" >
+		<angular2-multiselect name="dropdown-{{user.id}}" [data]="dropdownList" [(ngModel)]="selectedItems[user.id]"
+			[settings]="dropdownSettings" disabled (click)="showBtns()">
+		</angular2-multiselect>
+	</div>
+	<div class="btn-div" [ngClass]="{'d-none': display}">
+		<div class="mr-30 cursor" (click)="removeClass()"> Clear </div>
+		<div class="btn-sub cursor" (click)="removeClass()"> Submit </div>
+	</div>
+</div>
+

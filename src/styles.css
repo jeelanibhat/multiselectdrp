@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.pure-checkbox input[type=checkbox]+label:before {
+    box-sizing: content-box;
+    content: '';
+    position: absolute;
+    top: 70% !important;
+    left: 0;
+    width: 12px !important;
+    height: 12px !important;
+    text-align: center;
+    transition: .4s;
+    border: 1px solid grey !important;
+    border-radius: 0 !important;
+}
+.pure-checkbox input[type=checkbox]+label:after
+{
+    top: 60% !important;
+    left: 1px !important;
+}
+.dropdown-list ul li
+{
+    border-bottom: 1px solid #999;
+}
+.list-area
+{
+    height: 225px;
+    overflow-y: scroll;
+}
+.selected-list .c-btn
+{
+    border: 1px solid #999;
+}
+.arrow-down, .arrow-up
+{
+    border: 0 !important;
+}
+.dropdown-list
+{
+    padding-top: 0 !important;
+}
